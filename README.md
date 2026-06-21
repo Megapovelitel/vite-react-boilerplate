@@ -52,3 +52,16 @@ export default tseslint.config({
     }
 })
 ```
+
+## Aliases
+
+To configure import aliases:
+
+- Add path at `vite.config.ts`. config.resolve.alias
+- Add path at `tsconfig.app.json`
+
+Boilerplate preconfigured with @components alias. E.g. for `src/components/text-field/text-field.tsx` import will be:
+
+```tsx
+import { TextField } from '@components/text-field/text-field'
+```

@@ -23,7 +23,10 @@
         "noFallthroughCasesInSwitch": true,
         "noUncheckedSideEffectImports": true,
         "typeRoots": ["node_modules/@types", "node_modules"],
-        "types": ["vitest/globals", "@testing-library/jest-dom"]
+        "types": ["vitest/globals", "@testing-library/jest-dom"],
+        "paths": {
+            "@components/*": ["./src/components/*"]
+        }
     },
     "include": ["src"]
 }
